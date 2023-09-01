@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://manav.ch/atomic.css">
+  
+
+  <style>
+    .bgr {
+      background-color: #f00;
+    }
+
+    .bgg {
+      background-color: #0f0;
+    }
+
+    .bgb {
+      background-color: #00f;
+    }
+  </style>
+
+  <title>Molecular | Plutoniumm</title>
+  <link rel="stylesheet" href="/assets/index-15a34ad3.css">
+</head>
+
+<body class="mx-a" style="max-width: 900px;">
+
+  <!-- Slider -->
+  <section class="d-n">
+    <h1>Slider</h1>
+    <div class="slider">
+      <style>
+        @keyframes scroller {
+          0% {
+            transform: translateX(0);
+          }
+
+          33% {
+            transform: translateX(calc(var(--slider-w) * -1));
+          }
+
+          66% {
+            transform: translateX(calc(var(--slider-w) * -2));
+          }
+
+          100% {
+            transform: translateX(0);
+          }
+        }
+      </style>
+      <div class="slide-holder">
+        <div class="slide bgr">content1</div>
+        <div class="slide bgg">content2</div>
+        <div class="slide bgb">content3</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accordion -->
+  <section class="d-n">
+    <h1>Accordion</h1>
+    <details class="accordion">
+      <summary class="head">
+        Accordions Also work
+      </summary>
+      <div class="body">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+    </details>
+  </section>
+
+  <!-- Carousel -->
+  <section>
+    <h1>Carousel
+      <a href="manav.ch/atomic.css" class="tag">AtomiCSS</a>
+    </h1>
+    <div class="slider">
+      <img id="sl-1" class="slide sl-1" src="https://picsum.photos/300/200" alt="img desc" />
+      <img id="sl-2" class="slide sl-2" src="https://picsum.photos/300/201" alt="img desc" />
+      <img id="sl-3" class="slide sl-3" src="https://picsum.photos/300/202" alt="img desc" />
+      <img id="sl-4" class="slide sl-4" src="https://picsum.photos/300/203" alt="img desc" />
+
+      <ul class="p-rel">
+        <li><a href="#sl-1" class="p-abs o-1" aria-label="Image 1">1</a></li>
+        <li><a href="#sl-2" aria-label="Image 2">2</a></li>
+        <li><a href="#sl-3" aria-label="Image 3">3</a></li>
+        <li><a href="#sl-4" aria-label="Image 4">4</a></li>
+      </ul>
+    </div>
+  </section>
+
+</body>
+
+</html>
