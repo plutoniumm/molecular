@@ -1,0 +1,19 @@
+// details tag
+.accordion{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+.accordion.head{
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion.body{
+  padding: 5px;
+}

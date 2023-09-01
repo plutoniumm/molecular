@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://manav.ch/atomic.css">
+  <link rel="stylesheet" href="./molecular.scss">
+
+  <style>
+    .bgr {
+      background-color: #f00;
+    }
+
+    .bgg {
+      background-color: #0f0;
+    }
+
+    .bgb {
+      background-color: #00f;
+    }
+  </style>
+
+  <title>Document</title>
+</head>
+
+<body class="mx-a" style="max-width: 900px;">
+  <section class="d-b">
+    <h1>Slider</h1>
+    <div class="slider">
+      <style>
+        @keyframes scroller {
+          0% {
+            transform: translateX(0);
+          }
+
+          33% {
+            transform: translateX(calc(var(--slider-w) * -1));
+          }
+
+          66% {
+            transform: translateX(calc(var(--slider-w) * -2));
+          }
+
+          100% {
+            transform: translateX(0);
+          }
+        }
+      </style>
+      <div class="slide-holder">
+        <div class="slide bgr">content1</div>
+        <div class="slide bgg">content2</div>
+        <div class="slide bgb">content3</div>
+      </div>
+    </div>
+  </section>
+
+  <h1>Accordion</h1>
+  <section>
+    <details class="accordion">
+      <summary class="head">
+        Accordions Also work
+      </summary>
+      <div class="body">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+    </details>
+  </section>
+
+</body>
+
+</html>
