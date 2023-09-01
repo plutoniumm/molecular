@@ -1,0 +1,26 @@
+.slider {
+  position: relative;
+  img {
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 200px;
+
+    &:target {
+      transition: all .5s ease-in-out;
+    }
+
+    &:not(:target),
+    &:target ~ img#sl-4  {
+      position: relative;
+      opacity: 0;
+    }
+  }
+
+  ul li{
+    display: block;
+    list-style-type: none;
+  }
+}

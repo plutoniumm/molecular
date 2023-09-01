@@ -2,18 +2,41 @@
 .accordion{
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 1em;
   margin: 1em 0;
+  overflow: hidden;
 }
 
-.accordion.head{
-  padding: 5px;
+.accordion .head{
+  padding: 1em;
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  background: #eee;
+  will-change: background;
+  transition: background 0.3s ease-in-out;
+
+  &::-webkit-details-marker {
+    display:none;
+  }
+
+  &::after{
+    content: '+';
+    position: relative;
+    font-size: 1.5em;
+    line-height: 1rem;
+    position: relative;
+    top: -1px;
+    align-self: center;
+    font-weight: bold;
+  }
+
+  &:hover{
+    background: #ddd;
+  }
 }
 
-.accordion.body{
+.accordion .body{
   padding: 5px;
 }

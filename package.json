@@ -1,4 +1,12 @@
 {
+	"name": "molecular",
+	"version": "1.0.0",
+	"description": "A simple, lightweight, 0-JS CSS framework",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"deploy": "npx gh-pages -d dist -t true"
+	},
 	"dependencies": {
 		"vite": "^4.4.9"
 	},
