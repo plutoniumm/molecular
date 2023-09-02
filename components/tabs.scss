@@ -7,8 +7,8 @@
     label {
       padding: 5px;
       border-radius: 5px 5px 0 0;
-      border: 1px solid #222;
-      background: #ddd;
+      border: 1px solid #8886;
+      background: #eee;
       top: 1em;
       -webkit-user-select: none;
       user-select: none;
@@ -17,17 +17,14 @@
 
     & [type="radio"] {
       display: none;
-
-      &:focus + label {
-        outline: 2px dotted black;
-      }
     }
   }
 
   .content {
     position: absolute;
-    border: 1px solid #222;
+    border: 1px solid #8886;
     top: calc(1em + 8px);
+    border-radius: 0 5px 5px 5px;
     padding: 10px;
     left: 0;
     right: 0;

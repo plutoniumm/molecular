@@ -1,11 +1,16 @@
 .accs {
-  border: 1px solid #000;
+  border: 1px solid #8886;
   overflow: hidden;
+  border-radius: 5px;
 
   .acc {
     background: #f0f0f0;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Add a smooth transition */
+    transition: background-color 0.3s ease;
+
+    &:not(:last-child){
+      border-bottom: 1px solid #8886;
+    }
   }
 
   .acc-content {
