@@ -1,42 +1,35 @@
-// details tag
-.accordion{
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin: 1em 0;
+.accs {
+  border: 1px solid #000;
   overflow: hidden;
-}
 
-.accordion .head{
-  padding: 1em;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  background: #eee;
-  will-change: background;
-  transition: background 0.3s ease-in-out;
-
-  &::-webkit-details-marker {
-    display:none;
+  .acc {
+    background: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition */
   }
 
-  &::after{
-    content: '+';
-    position: relative;
-    font-size: 1.5em;
-    line-height: 1rem;
-    position: relative;
-    top: -1px;
-    align-self: center;
-    font-weight: bold;
+  .acc-content {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 0;
+    overflow: hidden;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+    transition-property: height, max-height, padding-top, padding-bottom;
   }
 
-  &:hover{
-    background: #ddd;
+  .acc-label{
+    padding:10px;
+    display: block;
+    width: 100%;
   }
-}
 
-.accordion .body{
-  padding: 5px;
+  input{
+    display: none;
+    &:checked ~ .acc-content {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      height: 100%;
+    }
+  }
 }

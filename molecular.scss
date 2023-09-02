@@ -1,7 +1,8 @@
-@use "components/slider.scss";
 @use "components/accordion.scss";
+@use "components/slider.scss";
+@use "components/collapse.scss";
 @use "components/carousel.scss";
-
+@use "components/tabs.scss";
 
 .tag{
   display: inline-block;

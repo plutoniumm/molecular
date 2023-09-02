@@ -26,10 +26,9 @@
 </head>
 
 <body class="mx-a" style="max-width: 900px;">
-
   <!-- Slider -->
   <section class="d-n">
-    <h1>Slider</h1>
+    <h2>Slider</h2>
     <div class="slider">
       <style>
         @keyframes scroller {
@@ -58,12 +57,12 @@
     </div>
   </section>
 
-  <!-- Accordion -->
+  <!-- Collapse -->
   <section class="d-n">
-    <h1>Accordion</h1>
-    <details class="accordion">
+    <h2>Collapse</h2>
+    <details class="collapse">
       <summary class="head">
-        Accordions Also work
+        collapses Also work
       </summary>
       <div class="body">
         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" frameborder="0"
@@ -73,24 +72,110 @@
   </section>
 
   <!-- Carousel -->
-  <section>
-    <h1>Carousel
-      <a href="manav.ch/atomic.css" class="tag">AtomiCSS</a>
-    </h1>
+  <section class="d-n">
+    <h2>Carousel</h2>
     <div class="slider">
-      <img id="sl-1" class="slide sl-1" src="https://picsum.photos/300/200" alt="img desc" />
-      <img id="sl-2" class="slide sl-2" src="https://picsum.photos/300/201" alt="img desc" />
-      <img id="sl-3" class="slide sl-3" src="https://picsum.photos/300/202" alt="img desc" />
-      <img id="sl-4" class="slide sl-4" src="https://picsum.photos/300/203" alt="img desc" />
+      <img id="sl-1" src="https://picsum.photos/300/200" style="position: absolute;opacity: 1;" alt="img desc" />
+      <img id="sl-2" src="https://picsum.photos/300/201" alt="img desc" />
+      <img id="sl-3" src="https://picsum.photos/300/202" alt="img desc" />
+      <img id="sl-n" src="https://picsum.photos/300/203" alt="img desc" />
 
-      <ul class="p-rel">
-        <li><a href="#sl-1" class="p-abs o-1" aria-label="Image 1">1</a></li>
+      <ul style="height: calc(1em + 10px);top: calc(100% - 1em - 10px);">
+        <style>
+          .slider img:not(:target),
+          .slider img:target~img#sl-n {
+            position: relative;
+            opacity: 0;
+          }
+
+          .slider ul li {
+            padding: 5px;
+            background: #fff8;
+          }
+        </style>
+        <li><a href="#sl-1" aria-label="Image 1">1</a></li>
         <li><a href="#sl-2" aria-label="Image 2">2</a></li>
         <li><a href="#sl-3" aria-label="Image 3">3</a></li>
-        <li><a href="#sl-4" aria-label="Image 4">4</a></li>
+        <li><a href="#sl-n" aria-label="Image 4">4</a></li>
       </ul>
     </div>
   </section>
+
+  <!-- Accordion -->
+  <section class="d-n">
+    <h2>Accordion</h2>
+    <h3>Multi Select</h3>
+    <div class="accs">
+      <div class="acc">
+        <input type="checkbox" id="c1" />
+        <label class="acc-label" for="c1">Item 1</label>
+        <div class="acc-content">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
+        </div>
+      </div>
+      <div class="acc">
+        <input type="checkbox" id="c2" />
+        <label class="acc-label" for="c2">Item 2</label>
+        <div class="acc-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+        </div>
+      </div>
+    </div>
+
+    <h3>Single Select</h3>
+    <div class="accs">
+      <div class="acc">
+        <input type="radio" id="rd1" name="rd" />
+        <label class="acc-label" for="rd1">Item 1</label>
+        <div class="acc-content">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, facilis.
+        </div>
+      </div>
+      <div class="acc">
+        <input type="radio" id="rd2" name="rd" />
+        <label class="acc-label" for="rd2">Item 2</label>
+        <div class="acc-content">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabs -->
+  <section class="d-b">
+    <h2>Tabs</h2>
+    <div class="tabs">
+      <div class="tab">
+        <input type="radio" name="tabgroup" id="t1" checked>
+        <label for="t1">Label One</label>
+        <div class="content">
+          Tab One Content
+        </div>
+      </div>
+
+      <div class="tab">
+        <input type="radio" name="tabgroup" id="t2">
+        <label for="t2">Label Two</label>
+        <div class="content">
+          Tab Two Content
+        </div>
+      </div>
+
+      <div class="tab">
+        <input type="radio" name="tabgroup" id="t3">
+        <label for="t3">Label Three</label>
+        <div class="content">
+          Tab Three Content
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <p><br></p>
+  <p><br></p>
+  <p><br></p>
+  <p><br></p>
+  <p><br></p>
 
 </body>
 
