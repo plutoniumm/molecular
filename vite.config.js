@@ -8,9 +8,9 @@ export default defineConfig( {
   build: {
     rollupOptions: {
       output: {
-        assetFileNames: `assets/[name].[ext]`
+        assetFileNames: `[name].[ext]`
       }
     }
   },
-  base: "./molecular"
+  base: "/molecular"
 } );

@@ -1,25 +1,23 @@
-:root{
+.slider {
 	--slider-w: 400px;
 	--slider-h: 300px;
-}
-
-.slider {
 	width: var(--slider-w);
 	height: var(--slider-h);
 	overflow: hidden;
-}
+	border-radius: 5px;
 
-.slide {
-	width: var(--slider-w);
-	height: var(--slider-h);
-	float: left;
-	position: relative;
-}
+	.slide {
+		width: var(--slider-w);
+		height: var(--slider-h);
+		float: left;
+		position: relative;
 
-.slide-holder {
-	width: 400%;
-	position: relative;
-	left: 0;
-	will-change: transform;
-	animation: scroller 10s infinite;
+		&-holder {
+			width: 400%;
+			position: relative;
+			left: 0;
+			will-change: transform;
+			animation: scroller 10s infinite;
+		}
+	}
 }

@@ -1,0 +1,40 @@
+.tag{
+  display: inline-block;
+  text-align: center;
+  min-width: 7ch;
+  padding: 0.25em 0.75em;
+  border-radius: 1.25em;
+  background: #888;
+  font-size: 0.9em;
+  margin: 0 0.5em;
+  position: relative;
+  top: -0.25em;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+
+[tooltip] {
+  &::before {
+    content: attr(tooltip);
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    min-width: 100px;
+
+    opacity: 0;
+    background: #2228;
+    color: #fff;
+    border: 1px solid #8888;
+    padding: 5px 10px;
+    border-radius: 3px;
+    z-index: 1;
+    pointer-events: none;
+    will-change: opacity;
+    transition: opacity 0.1s ease-in-out;
+  }
+  &:hover::before {
+   opacity: 1;
+  }
+}

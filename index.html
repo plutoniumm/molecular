@@ -29,19 +29,18 @@
   <link rel="stylesheet" href="./molecular.scss">
 
   <style>
-    .bgr {
-      background-color: #f00;
+    .faa {
+      background: #faa;
     }
 
-    .bgg {
-      background-color: #0f0;
+    .afa {
+      background: #afa;
     }
 
-    .bgb {
-      background-color: #00f;
+    .aaf {
+      background: #aaf;
     }
   </style>
-
 </head>
 
 <body class="mx-a" style="max-width: 900px;">
@@ -49,6 +48,15 @@
     <img src="./assets/logo.svg" class="p-rel" alt="Molecular" style="height:0.95em;top:0.15em;" />
     MOLECULAR
   </h1>
+  <!-- tags -->
+  <div class="f j-ar mx-a">
+    <a href="https://astro.build" class="tag aaf">Tags</a>
+    <a class="faa tag" href="#" tooltip="Tooltips also work">
+      <img src="https://x.manav.ch/m2/i/fas:circle-info" alt="i" class="p-rel"
+        style="margin-right:4px;top:2px;height:1em;" />
+      Tooltips</a>
+  </div>
+
   <p tooltip=" This is very powerful">The following are some complex components made using only css. This is more
     generally to demonstrate that JS is not
     always required to make complex components.</p>
@@ -77,9 +85,17 @@
         }
       </style>
       <div class="slide-holder">
-        <div class="slide bgr">content1</div>
-        <div class="slide bgg">content2</div>
-        <div class="slide bgb">content3</div>
+        <style>
+          /* custom, not necessary */
+          .slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        </style>
+        <div class="slide faa">Content 1</div>
+        <div class="slide afa">Content 2</div>
+        <div class="slide aaf">Content 3</div>
       </div>
     </div>
   </section>
@@ -101,7 +117,7 @@
   <!-- Carousel -->
   <section class="d-b">
     <h2>Carousel</h2>
-    <div class="slider">
+    <div class="carousel">
       <img id="sl-1" src="https://picsum.photos/300/200" style="position: absolute;opacity: 1;" alt="img desc" />
       <img id="sl-2" src="https://picsum.photos/300/201" alt="img desc" />
       <img id="sl-3" src="https://picsum.photos/300/202" alt="img desc" />
@@ -109,13 +125,13 @@
 
       <ul style="height: calc(1em + 10px);top: calc(100% - 1em - 10px);">
         <style>
-          .slider img:not(:target),
-          .slider img:target~img#sl-n {
+          .carousel img:not(:target),
+          .carousel img:target~img#sl-n {
             position: relative;
             opacity: 0;
           }
 
-          .slider ul li {
+          .carousel ul li {
             padding: 5px;
             background: #fff8;
           }

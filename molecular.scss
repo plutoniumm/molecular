@@ -3,22 +3,4 @@
 @use "components/collapse.scss";
 @use "components/carousel.scss";
 @use "components/tabs.scss";
-@use "components/tooltip.scss";
-
-.tag{
-  display: inline-block;
-  padding: 5px 10px;
-  border-radius: 20px;
-  background: #f66;
-  margin: 0 10px;
-  color: #fff;
-  position: relative;
-  font-size: 0.5em;
-  top: -0.25em;
-  text-decoration: none;
-  transition: background 0.3s ease-in-out;
-
-  &:hover{
-    background: #f00;
-  }
-}
+@use "components/elemental.scss";
