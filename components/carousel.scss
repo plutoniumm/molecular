@@ -34,8 +34,8 @@
     list-style-type: none;
     flex:1;
     &::before {
-      content: "\2022";
-      color: #f000;
+      content: " ";
+      color: transparent;
       display: inline-block;
       width: .5px;
     }
