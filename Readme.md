@@ -23,7 +23,15 @@ curl https://plutoniumm.github.io/molecular/index.css > molecular.css
 
 ## 📖 Documentation
 No documentation, just usage code and its result. \
-[Usage](https://github.com/plutoniumm/molecular/blob/main/index.html) | [Examples](https://plutoniumm.github.io/molecular/examples)
+[Usage](https://github.com/plutoniumm/molecular/blob/main/index.html#L95) | [Examples](https://plutoniumm.github.io/molecular/)
+
+Supported components:
+- Accordions
+- Tags & Tooltips
+- Collapsible
+- Carousels
+- Sliders
+- Tabs
 
 > Note: Due to the abundance of examples I'm not gonna do pure CSS Navs and Spinners
 
