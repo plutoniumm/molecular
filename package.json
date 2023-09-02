@@ -4,11 +4,12 @@
 	"description": "A simple, lightweight, 0-JS CSS framework",
 	"scripts": {
 		"dev": "vite",
-		"build": "vite build",
+		"build": "sh assets/build.sh",
 		"deploy": "npx gh-pages -d dist -t true",
 		"postdeploy": "rm -rf dist"
 	},
 	"dependencies": {
+		"postcss-rgba-hex": "^0.3.7",
 		"vite": "^4.4.9"
 	},
 	"devDependencies": {

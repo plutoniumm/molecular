@@ -5,6 +5,16 @@ export default defineConfig( {
   server: {
     port: 3000
   },
+  css: {
+    // rgba-hex
+    postcss: {
+      plugins: [
+        require( 'postcss-rgba-hex' )( {
+          silent: true
+        } )
+      ]
+    }
+  },
   build: {
     rollupOptions: {
       output: {
